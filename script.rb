@@ -27,6 +27,11 @@ case choice
   when "delete"
     puts "what do you want to delete?"
     title = gets.chomp
+    if movies[title.to_sym] = title
+      movies.delete(title)
+    else
+      puts "this movie is not in the hash"
+    end
   else
   	puts "Error!"
 end
