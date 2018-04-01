@@ -1,19 +1,23 @@
 movies = {
-  blackPanther: 10,
-  blow: 10
+  BlackPanther: 10,
+  Blow: 10
   }
-puts "what's your favorite movie?"
+puts "what would you like to do?"
 choice = gets.chomp
 
 case choice
-when "add"
-  puts "added!"
-when "update"
-  puts "updated!"
-when "display"
-  puts "Movies!"
-when "delete"
-  puts "Deleted!"
-else
-  puts "Error!"
+  when "add"
+	  puts "Pick a movie title"
+		title = gets.chomp
+  	puts "What would you rate this movie?"
+  	rating = gets.chomp
+  	movies[title.to_sym] = rating
+  when "update"
+	  puts "updated!"
+  when "display"
+  	puts "Movies!"
+  when "delete"
+  	puts "Deleted!"
+  else
+  	puts "Error!"
 end
