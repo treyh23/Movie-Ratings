@@ -21,7 +21,9 @@ case choice
   when "update"
 	  puts "updated!"
   when "display"
-  	puts "Movies!"
+    movies.each do |movies, ratings|
+      puts "#{movies}: #{ratings}"
+    end
   when "delete"
   	puts "Deleted!"
   else
