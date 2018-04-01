@@ -15,6 +15,8 @@ case choice
     if movies[title.to_sym] = nil
       movies[title] = title
       movies[rating] = rating
+    else
+      puts "Movie already exists"
     end
   when "update"
 	  puts "updated!"
