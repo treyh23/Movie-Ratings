@@ -2,7 +2,7 @@ movies = {
   BlackPanther: 10,
   Blow: 10
   }
-puts "what would you like to do?"
+puts "What would you like to do?"
 choice = gets.chomp
 
 case choice
