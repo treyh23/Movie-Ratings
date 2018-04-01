@@ -11,7 +11,11 @@ case choice
 		title = gets.chomp.to_sym
   	puts "What would you rate this movie?"
   	rating = gets.chomp.to_i
-  	movies[title.to_s] = rating
+    movies[title.to_s] = rating
+    if movies[title.to_sym] = nil
+      movies[title] = title
+      movies[rating] = rating
+    end
   when "update"
 	  puts "updated!"
   when "display"
