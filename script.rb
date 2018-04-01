@@ -12,7 +12,7 @@ case choice
   	puts "What would you rate this movie?"
   	rating = gets.chomp.to_i
     movies[title.to_s] = rating
-    if movies[title.to_sym] = nil
+    if movies[title.to_sym].nil?
       movies[title] = title
       movies[rating] = rating
     else
