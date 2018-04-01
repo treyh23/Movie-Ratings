@@ -25,7 +25,8 @@ case choice
       puts "#{movies}: #{ratings}"
     end
   when "delete"
-  	puts "Deleted!"
+    puts "what do you want to delete?"
+    title = gets.chomp
   else
   	puts "Error!"
 end
